@@ -2,7 +2,7 @@ import os
 
 
 def new_directory(directory, filename):
-    if not os.path.isdir(directory):
+    if os.path.isdir(directory) == False:
         os.mkdir(directory)
 
     os.chdir(directory)
